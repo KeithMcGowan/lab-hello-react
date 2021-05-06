@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+:root {
+  --colorMain: #0f1b2b;
+
+  --white: white;
+  --black: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background: var(--white);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  width: 1000px;
+  margin: 25px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 4rem;
+  line-height: 1em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  color: var(--colorMain);
+  font-size: 2rem;
+  margin: 5px 0 -10px;
+}
+
+.main {
+  width: 100%;
+}
+
+.header {
+  background: var(--colorMain);
+  background-image: url("./images/react-logo.svg");
+  height: 50vh;
+  color: var(--white);
+  padding: 15px 45px;
+}
+
+.menu {
+  float: right;
+}
+
+.text-header {
+  width: 375px;
+}
+
+.text-container {
+  margin-top: 100px;
+}
+
+.text {
+  width: 250px;
+  filter: brightness(60%);
+}
+
+.header button {
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+  color: var(--colorMain);
+}
+
+.strategies {
+  padding: 150px 0;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  flex-flow: row;
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+  margin-top: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 175px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item img {
+  width: 150px;
+  height: 150px;
+}
+
+.item p {
+  color: lightgrey;
+  filter: brightness(60%);
 }
